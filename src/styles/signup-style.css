@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-body {
+.signup-page {
     display: flex;
     flex-direction: column;
     justify-content: center;

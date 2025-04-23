@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import '../styles/login-style.css';
+import '../styles/login-style.css';
 
 export default function Login() {
   return (

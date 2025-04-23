@@ -12,7 +12,7 @@ export default function Admin() {
   const handleReject  = user => {};
 
   return (
-    <>
+    <div className='admin-page'>
       <Navbar links={[{ label: '', to: '/dashboard' }]} />
       <div className="admin-container">
         <div className="header">
@@ -26,6 +26,6 @@ export default function Admin() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

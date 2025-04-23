@@ -5,7 +5,7 @@ import '../styles/session-started-styles.css';
 
 export default function SessionStarted() {
   return (
-    <>
+    <div className='sessionstarted-page'>
       <Navbar links={[
         { label: 'Dashboards', to: '/dashboards' },
         { label: 'Log Waste',  to: '/dashboard'   },
@@ -17,6 +17,6 @@ export default function SessionStarted() {
         <div className="subheader">Waste Management</div>
         <div className="greeting">Hello, you are logged in!</div>
       </VideoBackground>
-    </>
+    </div>
   );
 }

@@ -10,7 +10,7 @@ export default function Signup() {
   };
 
   return (
-    <div>
+    <div className='signup-page'>
       <div className="logo-container">
         <Logo src="/assets/kia-slogan-blanco.png" />
       </div>

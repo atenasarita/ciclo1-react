@@ -24,7 +24,7 @@ export default function Account() {
   };
 
   return (
-    <>
+    <div className='account-page'>
       <Navbar links={[{ label: '', to: '/dashboard' }]} />
       <div className="account-container">
         <h1>Your Account</h1>
@@ -43,7 +43,7 @@ export default function Account() {
         </form>
         {!editable && <Button onClick={()=>setEditable(true)}>Edit Info</Button>}
       </div>
-    </>
+    </div>
   );
 }
 
