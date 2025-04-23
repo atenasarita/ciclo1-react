@@ -1,0 +1,93 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://focus.ua/static/storage/originals/1/6a/5a57c7fd43aabeea66a495b623a006a1.jpg');
+    background-size: cover;
+}
+
+.back-button{
+    width: 170px;
+    background-color: #b22222ac;
+    height: 100vh;
+    padding-top: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex; 
+    flex-direction: column;
+    z-index: 2;
+}
+  
+.back-button img {
+    width: 70px;
+    margin-left: 40px;
+}
+  
+.account-container {
+    background-color: #ffffffdf;
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+  
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+.account-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.account-form label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+  
+.account-form input {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 50px;
+    border: solid 1px black;
+    background-color: transparent;
+}
+  
+.account-form input[type="submit"] {
+    background-color: #4a90e2;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+.account-form input[type="submit"]:hover {
+    background-color: #3a78c2;
+}
+
+.btn {
+    margin-top: 10px;
+    height: 52px;
+    font-size: 20px;
+    border-color: #F1F1F2;
+    background-color: rgb(37, 39, 51);
+    color: #F1F1F2;
+    border-radius: 50px;
+    border: 0px;
+    width: 100%;
+}
+
+.btn:hover{
+    background-color: rgb(48, 52, 70);
+    transition: all 200ms;
+    cursor: pointer;
+}

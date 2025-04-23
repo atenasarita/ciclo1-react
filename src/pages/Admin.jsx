@@ -1,0 +1,31 @@
+import Navbar       from '../components/Navbar';
+import ApprovalCard from '../components/ApprovalCard';
+import '../styles/admin-styles.css';
+
+const dummyUsers = [
+  { name: 'Jane Doe', username: 'N00949600', email: 'jane@kia.com' },
+  { name: 'John Doe', username: 'N01331090', email: 'john@kia.com' },
+];
+
+export default function Admin() {
+  const handleApprove = user => {};
+  const handleReject  = user => {};
+
+  return (
+    <>
+      <Navbar links={[{ label: '', to: '/dashboard' }]} />
+      <div className="admin-container">
+        <div className="header">
+          <h1>Pending Sign Ups</h1>
+          <p>Approve or reject new user accounts</p>
+        </div>
+        <div className="approval-list">
+          {dummyUsers.map(u => (
+            <ApprovalCard key={u.username} user={u}
+              onApprove={handleApprove} onReject={handleReject} />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}

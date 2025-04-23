@@ -1,0 +1,87 @@
+
+
+body {
+    background-color: #0f0f0f;
+    color: #f1f1f2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.back-button{
+    width: 170px;
+    background-color: #b22222;
+    height: 100vh;
+    padding-top: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+  
+.back-button img {
+    width: 70px;
+    margin-left: 40px;
+}
+  
+  .admin-container {
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .approval-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .approval-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-info p {
+    margin: 5px 0;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .actions .approve {
+    background-color: #2ecc71;
+    color: #0f0f0f;
+  }
+  
+  .actions .reject {
+    background-color: #e74c3c;
+    color: #f1f1f2;
+  }
+  
+  .actions button:hover {
+    opacity: 0.8;
+  }
+  
