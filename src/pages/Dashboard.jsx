@@ -5,7 +5,7 @@ import '../styles/dashboards-styles.css';
 export default function Dashboard() {
   return (
     <div className='dashboard-page'>
-      <Navbar links={[{ label: '', to: '/dashboard' }]} />
+      <Navbar links={[{ label: 'Go Back', to: '/sessionstarted' }]} />
       <div className="main-content">
         <GraphCard title="Graph 1" />
         <GraphCard title="Graph 2" />

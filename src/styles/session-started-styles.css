@@ -1,36 +1,39 @@
 .sessionstarted-page {
-    background: #242a30;
-    color: #F1F1F2; 
+    background: rgb(17, 18, 31);
+    color: #F1F1F2;
 }
 
 /* Navbar */
 .navbar {
-    height: 100vh;
-    width: 225px; 
     position: fixed;
+    top: 57%;
+    left: 40px;
+    transform: translateY(-95%);
+    width: 200px;
+    height: 45vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 30px 20px;
     z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #b22222;
-    padding-top: 110px;
-    padding-left: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: left;
+    justify-content: space-between;
 }
 
 .navbar a {
+    color: black;
     text-decoration: none;
-    color: #F1F1F2;
-    font-size: 24px;
+    font-size: 20px;
     padding: 8px 15px;
     border-radius: 5px;
     transition: background 0.3s ease;
     margin-bottom: 20px;
+    font-family: signatureBold;
 }
 
 .navbar a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(19, 21, 44, 0.1);
     text-decoration: none;
 }
 
@@ -39,20 +42,21 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    margin: 50px 0px 60px 60px;
+    margin: 50px 0px 60px 70px;
 }
 
 .logo-container-ss img {
-    max-width: 250px;
+    max-width: 350px;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .subheader {
     display: flex;
-    font-size: 35px;
-    margin-left: 60px;
+    font-size: 45px;
+    margin-left: 70px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .greeting {
@@ -60,6 +64,7 @@
     font-size: 18px;
     font-weight: bold;
     margin-left: 80px;
+    color: white;
 }
 
 
@@ -79,7 +84,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    transform: translate(600px, 0);
+    transform: translate(400px, 0);
 }
   
 .overlay {
@@ -91,10 +96,10 @@
 
     background: radial-gradient(
     circle at bottom right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.4) 30%,
-    rgba(0, 0, 0, 1) 52%,
-    rgb(0, 0, 0) 100%
+    rgba(17, 18, 31, 0) 0%,
+    rgba(17, 18, 31, 0.6) 40%,
+    rgba(17, 18, 31, 1) 70%,
+    rgb(17, 18, 31) 100%
     );
     z-index: 1;
 }

@@ -25,23 +25,27 @@ export default function Account() {
 
   return (
     <div className='account-page'>
-      <Navbar links={[{ label: '', to: '/dashboard' }]} />
+      <Navbar className="back" links={[{ label: 'Go Back', to: '/sessionstarted' }]} />
       <div className="account-container">
         <h1>Your Account</h1>
-        <form className="account-form" onSubmit={handleSubmit}>
-          {['name','lastname','username','password'].map(field => (
-            <FormField key={field}
-              label={field.charAt(0).toUpperCase()+field.slice(1)}
-              id={field}
-              type={field==='password'?'password':'text'}
-              value={form[field]}
-              onChange={handleChange}
-              disabled={!editable}
-            />
-          ))}
-          {editable && <Button type="submit">Save Changes</Button>}
-        </form>
-        {!editable && <Button onClick={()=>setEditable(true)}>Edit Info</Button>}
+        <form
+            className={`account-form ${editable ? 'editable' : ''}`}
+            onSubmit={handleSubmit}
+          >
+            {['name','lastname','username','password'].map(field => (
+              <FormField
+                key={field}
+                label={field.charAt(0).toUpperCase() + field.slice(1)}
+                id={field}
+                type={field === 'password' ? 'password' : 'text'}
+                value={form[field]}
+                onChange={handleChange}
+                disabled={!editable}
+              />
+            ))}
+            {editable && <Button className="btn" type="submit">Save Changes</Button>}
+          </form>
+          {!editable && <Button className="btn" onClick={() => setEditable(true)}>Edit Info</Button>}
       </div>
     </div>
   );

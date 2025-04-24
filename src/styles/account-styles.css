@@ -5,37 +5,29 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://focus.ua/static/storage/originals/1/6a/5a57c7fd43aabeea66a495b623a006a1.jpg');
+    background-image: linear-gradient(to left, rgba(245, 246, 252, 0) 10%, 
+                                               rgba(37, 39, 51, 0.5) 30%,
+                                               rgba(37, 39, 51, 1)),
+                        url('https://carmania.mx/wp-content/uploads/2024/09/KIA-K4-35-scaled.jpg');
     background-size: cover;
 }
 
-.back-button{
-    width: 170px;
-    background-color: #b22222ac;
-    height: 100vh;
-    padding-top: 60px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-}
-  
-.back-button img {
-    width: 70px;
-    margin-left: 40px;
+.account-page .navbar {
+    height: 50px;
+    top: 25%;
+    transform: translateY(-95%);
+    align-items: center;
 }
   
 .account-container {
-    background-color: #ffffffdf;
     padding: 40px;
     border-radius: 16px;
     width: 100%;
     max-width: 400px;
+    background-color: #ffffffdf;
 }
   
-.header {
+.account-container h1 {
     text-align: center;
     margin-bottom: 30px;
 }
@@ -46,18 +38,32 @@
 }
   
 .account-form label {
-    margin-bottom: 6px;
     font-weight: 500;
+    margin-left: 6px;
 }
   
 .account-form input {
+    margin-top: 6px;
     margin-bottom: 20px;
-    padding: 12px;
+    padding: 10px 10px 10px 20px;
+    height: auto;
+    border: none;
+    font-size: 14px;
+}
+
+.account-form.editable input {
+    background-color: transparent;
     border-radius: 50px;
     border: solid 1px black;
-    background-color: transparent;
-}
+    color: black;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
   
+.account-form.editable input:focus {
+    border-color: #3a78c2;
+    outline: none;
+}
+
 .account-form input[type="submit"] {
     background-color: #4a90e2;
     cursor: pointer;

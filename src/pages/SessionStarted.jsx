@@ -21,8 +21,8 @@ export default function SessionStarted() {
             />
           </div>
 
-          <div className="subheader">Waste Management</div>
-          <div className="greeting">Hello, you are logged in!</div>
+            <div className="subheader">Waste Management</div>
+            <div className="greeting">Hello, you are logged in!</div>
 
         </div>
       </VideoBackground>
