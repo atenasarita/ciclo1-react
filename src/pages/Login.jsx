@@ -7,7 +7,7 @@ export default function Login() {
     <div className="login-page">
         <div className="logo-container">
             <img
-            src={process.env.PUBLIC_URL + '/assets/kia-slogan-blanco.png'}
+            src={process.env.PUBLIC_URL + '/assets/kia-slogan-negro.png'}
             alt="KIA Logo"
             />
         </div>
@@ -15,18 +15,16 @@ export default function Login() {
         <div id="container">
             <div className="inner-container right">
                 <form>
-                    <label htmlFor="username"> Username: </label>
+                    <label style={{ marginTop: '4.5rem'}} htmlFor="username"> Username: </label>
                     <input className="field" type="text" id="username" name="username" required/>
 
                     <label htmlFor="password">Password:</label>
                     <input className="field" type="password" id="password" name="password" required/>
                 </form>
 
-                <div>
-                <Link to="/dashboard">
+                <Link to="/sessionstarted">
                     <button className="field">Complete Log In</button>
                 </Link>
-                </div>
 
                 <div className="signin-text">
                     <p>

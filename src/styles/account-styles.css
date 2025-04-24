@@ -1,9 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .account-page {
+    font-family: signatureRegular;
     color: black;
     display: flex;
     justify-content: center;
@@ -21,7 +17,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     z-index: 2;
 }

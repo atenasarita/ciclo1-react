@@ -2,9 +2,9 @@ import Navbar    from '../components/Navbar';
 import GraphCard from '../components/GraphCard';
 import '../styles/dashboards-styles.css';
 
-export default function Dashboards() {
+export default function Dashboard() {
   return (
-    <div className='dashboards-page'>
+    <div className='dashboard-page'>
       <Navbar links={[{ label: '', to: '/dashboard' }]} />
       <div className="main-content">
         <GraphCard title="Graph 1" />
