@@ -1,4 +1,3 @@
-// src/components/FormField.jsx
 export default function FormField({
   label,
   id,
@@ -6,7 +5,7 @@ export default function FormField({
   value,
   onChange,
   disabled = false,
-  className = 'field'   // default className
+  className = 'field'   
 }) {
   return (
     <div className="form-field">
