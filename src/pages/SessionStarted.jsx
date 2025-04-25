@@ -1,31 +1,41 @@
-import Navbar from '../components/Navbar';
-import VideoBackground from '../components/VideoBackground';
+import { Link } from 'react-router-dom';
+import React from 'react';
 import '../styles/session-started-styles.css';
 
 export default function SessionStarted() {
   return (
     <div className="sessionstarted-page">
-      <Navbar links={[
-        { label: 'Dashboards', to: '/dashboard' },
-        { label: 'Log Waste',  to: '/dashboard'   },
-        { label: 'Account',    to: '/account'     },
-        { label: 'Admin',      to: '/admin'       },
-      ] }/>
+      <video autoPlay muted loop playsInline width="100%" height="100%">
+        <source src={process.env.PUBLIC_URL + '/assets/kiak4-unveil-video.mp4'} />
+      </video>
 
-      <VideoBackground src={process.env.PUBLIC_URL + '/assets/kiak4-unveil-video.mp4'}>
+
         <div className="content">
-          <div className="logo-container-ss">
             <img
               src={process.env.PUBLIC_URL + '/assets/kia-slogan-blanco.png'}
               alt="KIA Logo"
             />
-          </div>
 
             <div className="subheader">Waste Management</div>
             <div className="greeting">Hello, you are logged in!</div>
 
+            <Link to="/dashboard">
+            <button>Dashboards</button>
+            </Link>
+
+            <Link to="/dashboard">
+              <button>Log Waste</button>
+            </Link>
+            
+            <Link to="/admin">
+            <button>Admin</button>
+            </Link>
         </div>
-      </VideoBackground>
+
+        <Link to="/account">
+        <img className="account-icon" src='https://cdn-icons-png.flaticon.com/512/3177/3177440.png'></img>
+        </Link>
+
     </div>
   );
 }
