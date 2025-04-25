@@ -5,6 +5,15 @@
   display: flex;
 }
 
+.go-back-btn{
+  position: fixed; 
+  top: 60px;
+  left: 100px;
+  width: 70px;
+  z-index: 3;
+  cursor: pointer;
+}
+
 .dashboard-page .navbar {
   height: 50px;
   top: 20%;

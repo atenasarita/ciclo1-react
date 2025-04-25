@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Navbar    from '../components/Navbar';
+import { Link } from 'react-router-dom';
 import FormField from '../components/FormField';
 import Button    from '../components/Button';
 import '../styles/account-styles.css';
@@ -25,7 +25,16 @@ export default function Account() {
 
   return (
     <div className='account-page'>
-      <Navbar className="back" links={[{ label: 'Go Back', to: '/sessionstarted' }]} />
+
+      <Link to="/sessionstarted">
+            <img
+              className='go-back-btn'
+              src={process.env.PUBLIC_URL + '/assets/go-back.png'}
+              alt="Return btn"
+            />
+      </Link>
+      
+      
       <div className="account-container">
         <h1>Your Account</h1>
         <form

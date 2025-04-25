@@ -1,4 +1,4 @@
-import Navbar       from '../components/Navbar';
+import { Link } from 'react-router-dom';
 import ApprovalCard from '../components/ApprovalCard';
 import '../styles/admin-styles.css';
 
@@ -13,7 +13,15 @@ export default function Admin() {
 
   return (
     <div className='admin-page'>
-      <Navbar links={[{ label: 'Go Back', to: '/sessionstarted' }]} />
+
+      <Link to="/sessionstarted">
+            <img
+              className='go-back-btn'
+              src={process.env.PUBLIC_URL + '/assets/go-back.png'}
+              alt="Return btn"
+            />
+      </Link>
+
       <div className="admin-container">
         <div className="header-container">
           <h1>Pending Sign Ups Requests</h1>

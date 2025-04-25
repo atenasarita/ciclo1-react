@@ -35,9 +35,8 @@ export default function SessionStarted() {
         <Link to="/account">
         <img 
         className="account-icon" 
-        src='https://cdn-icons-png.flaticon.com/512/3177/3177440.png'
-        alt="Account Icon"
-        />
+        src='   https://cdn-icons-png.flaticon.com/512/6596/6596121.png '
+        alt="Account Icon"/>
         </Link>
 
     </div>
