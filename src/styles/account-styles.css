@@ -1,0 +1,93 @@
+.account-page {
+    font-family: signatureRegular;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to left, rgba(245, 246, 252, 0) 10%, 
+                                               rgba(37, 39, 51, 0.5) 30%,
+                                               rgba(37, 39, 51, 1)),
+                        url('https://carmania.mx/wp-content/uploads/2024/09/KIA-K4-35-scaled.jpg');
+    background-size: cover;
+}
+
+.account-page .navbar {
+    height: 50px;
+    top: 25%;
+    transform: translateY(-95%);
+    align-items: center;
+}
+  
+.account-container {
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffffdf;
+}
+  
+.account-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+.account-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.account-form label {
+    font-weight: 500;
+    margin-left: 6px;
+}
+  
+.account-form input {
+    margin-top: 6px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 20px;
+    height: auto;
+    border: none;
+    font-size: 14px;
+}
+
+.account-form.editable input {
+    background-color: transparent;
+    border-radius: 50px;
+    border: solid 1px black;
+    color: black;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+.account-form.editable input:focus {
+    border-color: #3a78c2;
+    outline: none;
+}
+
+.account-form input[type="submit"] {
+    background-color: #4a90e2;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+.account-form input[type="submit"]:hover {
+    background-color: #3a78c2;
+}
+
+.btn {
+    margin-top: 10px;
+    height: 52px;
+    font-size: 20px;
+    border-color: #F1F1F2;
+    background-color: rgb(37, 39, 51);
+    color: #F1F1F2;
+    border-radius: 50px;
+    border: 0px;
+    width: 100%;
+}
+
+.btn:hover{
+    background-color: rgb(48, 52, 70);
+    transition: all 200ms;
+    cursor: pointer;
+}

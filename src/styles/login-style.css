@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:black;
+    font-family: signatureRegular;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://img.asmedia.epimg.net/resizer/v2/WXI4SA45SFAAFOKKCV3HVVV27I.jpg?auth=21a536f18c75f69aa1d54e8f6bea5c246b3d67642a99334440ab85af6c352ef0&width=1952&height=1098&smart=true');
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    z-index: 2;
+}
+
+.logo-container img {
+    max-width: 200px;
+    height: auto; 
+    object-fit: contain; 
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.inner-container{
+    height: 75%;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.right{
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 30%;
+    padding-left: 3rem;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right label, p{
+    margin-bottom: 0.5rem;
+} 
+
+.field{
+    width: 90%; 
+    height: 42px;
+    border: solid 1px;
+    border-radius: 50px;
+    background-color: transparent;
+    margin-bottom: 2.5rem;
+    padding-left: 15px;
+}
+
+.right button{
+    font-size: 18px;
+    height: 54px;
+    background-color: rgb(37, 39, 51);
+    color: #F1F1F2;
+}
+
+.right button:hover{
+    background-color: rgb(48, 52, 70);
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.signin-text{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.signin-text a:hover{
+    color: rgb(214, 2, 2);
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.success-message{
+    color: aqua;
+}
