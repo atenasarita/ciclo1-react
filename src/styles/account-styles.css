@@ -11,13 +11,6 @@
                         url('https://carmania.mx/wp-content/uploads/2024/09/KIA-K4-35-scaled.jpg');
     background-size: cover;
 }
-
-.account-page .navbar {
-    height: 50px;
-    top: 25%;
-    transform: translateY(-95%);
-    align-items: center;
-}
   
 .account-container {
     padding: 40px;

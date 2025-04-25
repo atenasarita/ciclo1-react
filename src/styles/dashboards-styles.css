@@ -21,15 +21,6 @@
   align-items: center;
 }
 
-.navbar img {
-  width: 70px;
-  margin-left: 40px;
-}
-
-.navbar a:hover {
-  cursor: pointer;
-}
-
 .main-content {
   margin-left: 300px;
   padding: 40px;
