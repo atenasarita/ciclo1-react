@@ -56,7 +56,6 @@
 
 .content button{
     font-size: 18px;
-    margin-top: 30px;
     padding: 1rem;
     background-color: transparent;
     color: white;
@@ -65,16 +64,18 @@
     width: 20rem;
     transition: all 400ms;
     height: 3.5rem;
+    margin-top: 20px;
 }
 
 .content button:hover{
     background-color: white;
     color: black;
     border: 2px solid white;
+    cursor: pointer;
 }
 
 .account-icon{
-    position: fixed; /* o absolute si está dentro de un contenedor con posición relativa */
+    position: fixed; 
     top: 30px;
     right: 40px;
     width: 70px;
