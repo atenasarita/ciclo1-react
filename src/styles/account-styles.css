@@ -84,3 +84,18 @@
     transition: all 200ms;
     cursor: pointer;
 }
+
+#logout-btn{
+    margin-top: 10px;
+    height: 52px;
+    font-size: 20px;
+    border: solid 2px rgb(37, 39, 51);
+    background-color: transparent;
+    border-radius: 50px;
+    width: 100%;
+}
+
+#logout-btn:hover{
+    background-color: #F1F1F2;
+    cursor: pointer;
+}

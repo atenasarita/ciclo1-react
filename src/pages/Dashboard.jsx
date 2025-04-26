@@ -4,7 +4,7 @@ import '../styles/dashboards-styles.css';
 
 export default function Dashboard() {
   return (
-    <div className='dashboard-page'>
+    <div className='logwaste-page'>
       <Link to="/sessionstarted">
             <img
               className='go-back-btn'

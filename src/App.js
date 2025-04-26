@@ -8,6 +8,7 @@ import Dashboard      from './pages/Dashboard';
 import SessionStarted from './pages/SessionStarted';
 import Admin          from './pages/Admin';
 import Account        from './pages/Account';
+import LogWaste        from './pages/LogWaste';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/sessionstarted" element={<SessionStarted />} />
         <Route path="/admin"      element={<Admin />} />
         <Route path="/account"    element={<Account />} />
+        <Route path="/logwaste"    element={<LogWaste />} />
       </Routes>
     </BrowserRouter>
   );

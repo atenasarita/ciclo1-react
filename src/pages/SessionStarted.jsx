@@ -23,7 +23,7 @@ export default function SessionStarted() {
             <button>Dashboards</button>
             </Link>
 
-            <Link to="/dashboard">
+            <Link to="/logwaste">
               <button>Log Waste</button>
             </Link>
             

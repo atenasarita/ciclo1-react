@@ -55,6 +55,11 @@ export default function Account() {
             {editable && <Button className="btn" type="submit">Save Changes</Button>}
           </form>
           {!editable && <Button className="btn" onClick={() => setEditable(true)}>Edit Info</Button>}
+
+          <Link to="/">
+            <button id="logout-btn">Log Out</button>
+          </Link>
+          
       </div>
     </div>
   );
