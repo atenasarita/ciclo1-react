@@ -14,24 +14,22 @@ export default function Login() {
 
         <div id="container">
             <div className="inner-container right">
-                <form>
-                    <label style={{ marginTop: '4.5rem'}} htmlFor="username"> Username: </label>
-                    <input className="field" type="text" id="username" name="username" required/>
+            <form>
+                <label htmlFor="username"> Username: </label>
+                <input className="field" type="text" id="username" name="username" required />
 
-                    <label htmlFor="password">Password:</label>
-                    <input className="field" type="password" id="password" name="password" required/>
-                </form>
+                <label htmlFor="password">Password:</label>
+                <input className="field" type="password" id="password" name="password" required />
 
-                <Link to="/sessionstarted">
-                    <button className="field">Complete Log In</button>
-                </Link>
+                <button type="submit">Complete Log In</button>
 
                 <div className="signin-text">
                     <p>
-                        Don't have an account yet?{' '}
-                        <Link to="/signup">Sign up here</Link>
+                    Don't have an account yet?{' '}
+                    <Link to="/signup">Sign up here</Link>
                     </p>
                 </div>
+            </form>
             </div>
         </div>
     </div>

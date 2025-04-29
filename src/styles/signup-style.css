@@ -87,15 +87,6 @@
 }
 
 #form-container-su  button[type="submit"]{
-    margin-top: 8px;
-    height: 52px;
-    font-size: 20px;
-    border-color: #F1F1F2;
-    background-color: rgb(37, 39, 51);
-    color: #F1F1F2;
-}
-
-#form-container-su  button[type="submit"]{
     margin-top: 10px;
     height: 52px;
     font-size: 20px;
