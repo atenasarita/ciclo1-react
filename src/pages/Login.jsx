@@ -22,7 +22,7 @@ export default function Login() {
                 <input className="field" type="password" id="password" name="password" required />
 
                 <Link to="/sessionstarted"> 
-                <button type="submit">Complete Log In</button>
+                <button>Complete Log In</button>
                 </Link>
               
                 <div className="signin-text">
