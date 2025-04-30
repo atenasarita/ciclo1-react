@@ -64,14 +64,14 @@
     padding-left: 15px;
 }
 
-#container button{
+.inner-container button{
     font-size: 18px;
     height: 54px;
     background-color: rgb(37, 39, 51);
     color: #F1F1F2;
 }
 
-#container button:hover{
+.inner-container button:hover{
     background-color: rgb(48, 52, 70);
     transition: all 200ms;
     cursor: pointer;
