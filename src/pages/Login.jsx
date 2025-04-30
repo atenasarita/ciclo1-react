@@ -21,8 +21,10 @@ export default function Login() {
                 <label htmlFor="password">Password:</label>
                 <input className="field" type="password" id="password" name="password" required />
 
+                <Link to="/sessionstarted"> 
                 <button type="submit">Complete Log In</button>
-
+                </Link>
+              
                 <div className="signin-text">
                     <p>
                     Don't have an account yet?{' '}
