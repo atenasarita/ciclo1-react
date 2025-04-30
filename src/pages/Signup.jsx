@@ -19,6 +19,7 @@ export default function Signup() {
         <div className="inner-container-su">
 
           <form id="form-container-su" onSubmit={handleSubmit}>
+            <FormField className="field-su" label="First and Last Name:" id="first-last" value="" onChange={()=>{}} />
             <FormField className="field-su" label="Username:" id="username" value="" onChange={()=>{}} />
             <FormField className="field-su" label="Email:"    id="email"    value="" onChange={()=>{}} />
             <FormField className="field-su" label="Password:" id="password" type="password" value="" onChange={()=>{}} />
