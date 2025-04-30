@@ -69,6 +69,8 @@
     height: 54px;
     background-color: rgb(37, 39, 51);
     color: #F1F1F2;
+    width: 90%;
+    border-radius: 50px;
 }
 
 .inner-container button:hover{
