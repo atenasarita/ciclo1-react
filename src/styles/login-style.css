@@ -34,7 +34,7 @@
 }
 
 .inner-container{
-    height: 75%;
+    height: 60%;
     border: 0px;
     border-radius: 20px;
 }
@@ -42,7 +42,7 @@
 .right{
     background-color: rgba(255, 255, 255, 0.95);
     width: 30%;
-    padding-left: 3rem;
+    padding: 3rem 2.5rem ;
 }
 
 .right form {
@@ -78,7 +78,7 @@
 }
 
 .signin-text{
-    margin-top: 70px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -94,4 +94,63 @@
 
 .success-message{
     color: aqua;
+}
+
+/* --- Responsive design --- */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+.right {
+    width: 80%; /* Make form wider */
+    padding: 2rem 1.5rem;
+    }
+
+    .logo-container img {
+        max-width: 150px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .login-page {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .right {
+        width: 60%;
+        padding: 1.5rem 1rem;
+    }
+
+    .logo-container {
+        margin-top: 30px;
+    }
+
+    .logo-container img {
+        max-width: 120px;
+    }
+
+    .field {
+        width: 80%;
+        height: 30px;
+    }
+
+    .right button{
+        font-size: 16px;
+        height: 40px;
+        background-color: aqua;
+        width: 80%;
+    }
+
+    .signin-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .signin-text a {
+        margin-top: 10px;
+    }
 }

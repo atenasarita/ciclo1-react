@@ -9,6 +9,7 @@ import SessionStarted from './pages/SessionStarted';
 import Admin          from './pages/Admin';
 import Account        from './pages/Account';
 import LogWaste        from './pages/LogWaste';
+import '../src/App.css';
 
 function App() {
   return (
