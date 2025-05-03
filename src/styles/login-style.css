@@ -1,156 +1,118 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    color:black;
-    font-family: signatureRegular;
-}
-
-.login-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+  }
+  
+  .main-screen {
     height: 100vh;
-    background-image: url('https://img.asmedia.epimg.net/resizer/v2/WXI4SA45SFAAFOKKCV3HVVV27I.jpg?auth=21a536f18c75f69aa1d54e8f6bea5c246b3d67642a99334440ab85af6c352ef0&width=1952&height=1098&smart=true');
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    z-index: 2;
-}
-
-.logo-container img {
-    max-width: 200px;
-    height: auto; 
-    object-fit: contain; 
-}
-
-#container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .login-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
-}
-
-.inner-container{
-    height: 60%;
-    border: 0px;
-    border-radius: 20px;
-}
-
-.right{
-    background-color: rgba(255, 255, 255, 0.95);
-    width: 30%;
-    padding: 3rem 2.5rem ;
-}
-
-.right form {
+    height: 100%;
+    padding: 0 5%;
+    gap: 80px;
+  }
+  
+  .left-section {
+    color: white;
+    max-width: 40%;
+    text-align: left;
+  }
+  
+  .left-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .left-section p {
+    font-size: 0.95rem;
+  }
+  
+  .left-section a {
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .right-section {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 320px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
-}
-
-.right label, p{
-    margin-bottom: 0.5rem;
-} 
-
-.field{
-    width: 90%; 
-    height: 42px;
-    border: solid 1px;
-    border-radius: 50px;
-    background-color: transparent;
-    margin-bottom: 2.5rem;
-    padding-left: 15px;
-}
-
-.right button{
-    font-size: 18px;
-    height: 54px;
-    background-color: rgb(37, 39, 51);
-    color: #F1F1F2;
-}
-
-.right button:hover{
-    background-color: rgb(48, 52, 70);
-    transition: all 200ms;
-    cursor: pointer;
-}
-
-.signin-text{
-    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .right-section form {
     display: flex;
-    flex-direction: row;
-}
-
-.signin-text a:hover{
-    color: rgb(214, 2, 2);
-}
-
-.error-message {
-    color: red;
-    margin-top: 10px;
-}
-
-.success-message{
-    color: aqua;
-}
-
-/* --- Responsive design --- */
-
-/* For tablets and smaller screens */
-@media (max-width: 768px) {
-.right {
-    width: 80%; /* Make form wider */
-    padding: 2rem 1.5rem;
+    flex-direction: column;
+  }
+  
+  .right-section label {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .field {
+    margin-bottom: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+  }
+  
+  .right-section button {
+    font-size: 1rem;
+    padding: 0.75rem;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 100%;
+    transition: all 400ms ease;
+  }
+  
+  .right-section button:hover {
+    background-color: white;
+    color: black;
+  }  
+  
+  @media (max-width: 768px) {
+    .login-wrapper {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
     }
-
-    .logo-container img {
-        max-width: 150px;
+  
+    .left-section {
+      max-width: 90%;
+      margin-bottom: 2rem;
     }
-}
-
-/* For mobile phones */
-@media (max-width: 480px) {
-    .login-page {
-        background-size: cover;
-        background-position: center;
+  
+    .right-section {
+      width: 80%;
     }
-
-    .right {
-        width: 60%;
-        padding: 1.5rem 1rem;
-    }
-
-    .logo-container {
-        margin-top: 30px;
-    }
-
-    .logo-container img {
-        max-width: 120px;
-    }
-
-    .field {
-        width: 80%;
-        height: 30px;
-    }
-
-    .right button{
-        font-size: 16px;
-        height: 40px;
-        background-color: aqua;
-        width: 80%;
-    }
-
-    .signin-text {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .signin-text a {
-        margin-top: 10px;
-    }
-}
+  }

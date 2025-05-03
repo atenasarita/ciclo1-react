@@ -1,11 +1,40 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/main-style.css';
 
 export default function MainPage() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (video) {
+      video.currentTime = 0.5;
+
+      const handleTimeUpdate = () => {
+        if (video.currentTime >= 10.8) {
+          video.currentTime = 0.5;
+        }
+      };
+
+      video.addEventListener('timeupdate', handleTimeUpdate);
+
+      return () => {
+        video.removeEventListener('timeupdate', handleTimeUpdate);
+      };
+    }
+  }, []);
+
   return (
     <div className="main-screen">
-      <video autoPlay muted loop playsInline width="100%" height="100%">
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="background-video"
+      >
         <source src={process.env.PUBLIC_URL + '/assets/kiak4-unveil-video.mp4'} />
       </video>
 
@@ -22,7 +51,6 @@ export default function MainPage() {
         <Link to="/signup">
           <button>Sign Up</button>
         </Link>
-
       </div>
     </div>
   );
