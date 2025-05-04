@@ -9,6 +9,7 @@ import SessionStarted from './pages/SessionStarted';
 import Admin          from './pages/Admin';
 import Account        from './pages/Account';
 import LogWaste        from './pages/LogWaste';
+import HistoryView        from './pages/HistoryView';
 import '../src/App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/admin"      element={<Admin />} />
         <Route path="/account"    element={<Account />} />
         <Route path="/logwaste"    element={<LogWaste />} />
+        <Route path="/historyview"    element={<HistoryView />} />
       </Routes>
     </BrowserRouter>
   );

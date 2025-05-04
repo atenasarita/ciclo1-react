@@ -19,10 +19,10 @@ export default function Signup() {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
-      video.currentTime = 24.9;
+      video.currentTime = 20.9;
       const handleTimeUpdate = () => {
-        if (video.currentTime >= 36.8) {
-          video.currentTime = 24.9;
+        if (video.currentTime >= 29.3) {
+          video.currentTime = 20.9;
         }
       };
       video.addEventListener('timeupdate', handleTimeUpdate);

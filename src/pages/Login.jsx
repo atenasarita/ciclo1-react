@@ -18,7 +18,7 @@ export default function Login() {
     if (video) {
       video.currentTime = 13.1;
       const handleTimeUpdate = () => {
-        if (video.currentTime >= 23.4) {
+        if (video.currentTime >= 20.5) {
           video.currentTime = 13.1;
         }
       };

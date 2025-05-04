@@ -9,11 +9,11 @@ export default function MainPage() {
     const video = videoRef.current;
 
     if (video) {
-      video.currentTime = 0.5;
+      video.currentTime = 3.9;
 
       const handleTimeUpdate = () => {
         if (video.currentTime >= 10.8) {
-          video.currentTime = 0.5;
+          video.currentTime = 3.9;
         }
       };
 
@@ -33,7 +33,7 @@ export default function MainPage() {
         muted
         loop
         playsInline
-        className="background-video"
+        className="main-screen-video"
       >
         <source src={process.env.PUBLIC_URL + '/assets/kiak4-unveil-video.mp4'} />
       </video>

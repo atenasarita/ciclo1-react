@@ -1,33 +1,143 @@
-.logwaste-page {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
+.logwaste-container {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  padding: 50px 20px;
+}
+
+.logwaste-go-back {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 100;
+}
+.logwaste-go-back:hover {
+  transform: scale(1.1);
+}
+
+.logwaste-form-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 700px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.logwaste-form-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #f8fafc;
+}
+
+.logwaste-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper.full {
+  grid-column: span 2;
+}
+
+.input-wrapper label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  background-color: #f8fafc;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #1e293b;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.input-wrapper input:focus,
+.input-wrapper select:focus,
+.input-wrapper textarea:focus {
+  outline: none;
+  border: 2px solid #38bdf8;
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.logwaste-submit-btn {
+  grid-column: span 2;
+  padding: 12px;
+  font-weight: bold;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logwaste-submit-btn:hover {
+  background-color: #0ea5e9;
+}
+
+.logwaste-success-msg {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #10b981;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.logwaste-history-btn {
+  grid-column: span 2;
+  margin-top: 15px;
+  text-align: center;
+  padding: 12px;
+  background-color: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.logwaste-history-btn:hover {
+  background-color: #38bdf8;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .go-back-btn {
-    position: fixed; 
-    top: 60px;
-    left: 100px;
-    width: 70px;
-    z-index: 3;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .go-back-btn:hover {
-    transform: scale(1.1);
-  }
-  
-  .lw-main-content {
-    margin-left: 300px;
-    padding: 40px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: white;
-  }
-  
+}
