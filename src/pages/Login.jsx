@@ -43,30 +43,36 @@ export default function Login() {
     } else {
       setError('');
       alert('Login successful!');
-      navigate('/session-started');
+      navigate('/sessionstarted');
     }
   };
 
   return (
-    <div className="main-screen">
+    <div className="login-screen">
       <video
         ref={videoRef}
         autoPlay
         muted
         loop
         playsInline
-        className="background-video"
+        className="login-screen video"
       >
         <source src={process.env.PUBLIC_URL + '/assets/kiak4-unveil-video.mp4'} />
       </video>
 
+      <div className="login-container">
+        <img
+          src={process.env.PUBLIC_URL + '/assets/kia-slogan-blanco.png'}
+          alt="KIA logo"
+        />
+
       <div className="login-wrapper">
-        <div className="left-section">
+        <div className="login-left-section">
           <h1>Welcome Back!</h1>
           <p>Don’t have an account yet? <Link to="/signup">Sign Up</Link></p>
         </div>
 
-        <div className="right-section">
+        <div className="login-right-section">
           <form onSubmit={handleSubmit}>
             <label>Username</label>
             <input type="text" className="field" name="username" value={formData.username} onChange={handleChange} />
@@ -74,11 +80,12 @@ export default function Login() {
             <label>Password</label>
             <input type="password" className="field" name="password" value={formData.password} onChange={handleChange} />
 
-            {error && <p className="error-message">{error}</p>}
+            {error && <p className="login-error-message">{error}</p>}
 
             <button type="submit">Log In</button>
           </form>
         </div>
+      </div>
       </div>
     </div>
   );

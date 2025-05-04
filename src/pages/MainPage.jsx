@@ -43,7 +43,7 @@ export default function MainPage() {
           src={process.env.PUBLIC_URL + '/assets/kia-slogan-blanco.png'}
           alt="KIA logo"
         />
-        <h1 className="home-title">Waste Management</h1>
+        <h1 className="main-screen-home-title">Waste Management</h1>
 
         <Link to="/login">
           <button>Log In</button>

@@ -50,25 +50,31 @@ export default function Signup() {
   };
 
   return (
-    <div className="main-screen">
+    <div className="signup-screen">
       <video
         ref={videoRef}
         autoPlay
         muted
         loop
         playsInline
-        className="background-video"
+        className="signup-screen video"
       >
         <source src={process.env.PUBLIC_URL + '/assets/kiak4-unveil-video.mp4'} />
       </video>
 
+      <div className="signup-container">
+        <img
+          src={process.env.PUBLIC_URL + '/assets/kia-slogan-blanco.png'}
+          alt="KIA logo"
+        />
+
       <div className="signup-wrapper">
-        <div className="left-section">
+        <div className="signup-left-section">
           <h1>Create Account</h1>
           <p>Already have an account? <Link to="/login">Log In</Link></p>
         </div>
 
-        <div className="right-section">
+        <div className="signup-right-section">
           <form onSubmit={handleSubmit}>
             <label>Name(s)</label>
             <input id="name" type="text" className="field" value={formData.name} onChange={handleChange} />
@@ -91,11 +97,12 @@ export default function Signup() {
             <label>Confirm Password</label>
             <input id="confirmPassword" type="password" className="field" value={formData.confirmPassword} onChange={handleChange} />
 
-            {error && <p className="error-message">{error}</p>}
+            {error && <p className="signup-error-message">{error}</p>}
 
             <button type="submit">Sign Up</button>
           </form>
         </div>
+      </div>
       </div>
     </div>
   );

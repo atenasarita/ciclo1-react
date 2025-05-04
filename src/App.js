@@ -19,10 +19,10 @@ function App() {
         <Route path="/login"      element={<Login />} />
         <Route path="/signup"     element={<SignUp />} />
         <Route path="/dashboard"  element={<Dashboard />} />
-        <Route path="/session-started" element={<SessionStarted />} />
+        <Route path="/sessionstarted" element={<SessionStarted />} />
         <Route path="/admin"      element={<Admin />} />
         <Route path="/account"    element={<Account />} />
-        <Route path="/log-waste"    element={<LogWaste />} />
+        <Route path="/logwaste"    element={<LogWaste />} />
       </Routes>
     </BrowserRouter>
   );
