@@ -3,7 +3,7 @@
   background: linear-gradient(to right, #0f172a, #1e293b);
   min-height: 100vh;
   padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: system-ui;
   color: #f8fafc;
   display: flex;
   flex-direction: column;

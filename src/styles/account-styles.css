@@ -1,5 +1,5 @@
 .account-page {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: system-ui;
     background: linear-gradient(to right, #0f172a, #1e293b);
     color: white;
     min-height: 100vh;

@@ -69,7 +69,7 @@
   
   .session-started-content p {
     font-size: 1.2rem;
-    color: #cbd5e1;
+    color: #ffffff;
   }
   
   /* Shortcut Cards */
@@ -83,8 +83,8 @@
   }
   
   .session-started-card.shortcut {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(255, 255, 255, 0.21);
     border-radius: 1rem;
     padding: 1.5rem;
     width: 260px;
@@ -107,7 +107,7 @@
   
   .session-started-card.shortcut p {
     font-size: 0.95rem;
-    color: #e2e8f0;
+    color: #ffffff;
   }
   
   /* Dashboard Section */

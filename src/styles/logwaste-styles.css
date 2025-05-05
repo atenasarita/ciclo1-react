@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: system-ui;
   color: white;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 .logwaste-go-back {
@@ -16,8 +16,9 @@
   width: 50px;
   cursor: pointer;
   transition: transform 0.2s ease;
-  z-index: 100;
+  z-index: 10;
 }
+
 .logwaste-go-back:hover {
   transform: scale(1.1);
 }
@@ -27,16 +28,16 @@
   border-radius: 20px;
   padding: 40px;
   width: 100%;
-  max-width: 700px;
-  backdrop-filter: blur(12px);
+  max-width: 1200px;
+  backdrop-filter: blur(10px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .logwaste-form-box h2 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 1.8rem;
-  color: #f8fafc;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #7dd3fc;
 }
 
 .logwaste-form {
@@ -55,8 +56,8 @@
 }
 
 .input-wrapper label {
-  margin-bottom: 6px;
-  font-weight: 600;
+  margin-bottom: 5px;
+  font-weight: bold;
   color: #cbd5e1;
 }
 
@@ -64,19 +65,21 @@
 .input-wrapper select,
 .input-wrapper textarea {
   background-color: #f8fafc;
-  border: none;
+  border: 2px solid transparent; /* <-- cambia a transparente por defecto */
   border-radius: 10px;
   padding: 10px;
   font-size: 1rem;
   color: #1e293b;
-  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box; /* <-- importante para que border no altere tamaño */
+  transition: border 0.2s ease; /* opcional: suaviza el cambio */
 }
 
 .input-wrapper input:focus,
 .input-wrapper select:focus,
 .input-wrapper textarea:focus {
   outline: none;
-  border: 2px solid #38bdf8;
+  border-color: #38bdf8; /* <-- solo cambia color, no grosor */
   background-color: #fff;
 }
 
@@ -85,50 +88,58 @@ textarea {
   min-height: 80px;
 }
 
-.logwaste-submit-btn {
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  font-weight: normal;
+  color: #e2e8f0;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.logwaste-btns {
   grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.logwaste-submit-btn,
+.logwaste-history-btn {
+  flex: 1;
   padding: 12px;
   font-weight: bold;
-  background-color: #38bdf8;
   border: none;
   border-radius: 10px;
-  color: white;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.logwaste-submit-btn {
+  background-color: #38bdf8;
+  color: white;
 }
 
 .logwaste-submit-btn:hover {
   background-color: #0ea5e9;
 }
 
-.logwaste-success-msg {
-  grid-column: span 2;
-  text-align: center;
-  margin-top: 20px;
-  font-weight: 600;
-  color: #10b981;
-  animation: fadeIn 0.5s ease-in-out;
-}
-
 .logwaste-history-btn {
-  grid-column: span 2;
-  margin-top: 15px;
-  text-align: center;
-  padding: 12px;
-  background-color: transparent;
-  border: 2px solid #38bdf8;
-  color: #38bdf8;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  text-decoration: none;
+  background-color: #22c55e;
+  color: white;
 }
 
 .logwaste-history-btn:hover {
-  background-color: #38bdf8;
-  color: white;
+  background-color: #16a34a;
 }
 
 @keyframes fadeIn {
